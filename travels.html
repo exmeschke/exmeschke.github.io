@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Emily Meschke | Travels</title>
+		<meta name="description" content="Some life highlights for Emily Meschke.">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display" rel="stylesheet">
+
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+      <script type="text/javascript" src="tiltedpage_scroll/jquery.tiltedpage-scroll.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="tiltedpage_scroll/tiltedpage-scroll.css" />
+
+	   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	   <style>
+	   @media screen and (max-width: 768px) {
+	   	.travel-title {
+	   		padding: 20px 0px 0px 0px;
+	   		font-size: 18pt;
+	   	}
+	   	.page {
+	   		height: 400px;
+	   	}
+	   	.travel-space {
+	   		height: 20px;
+	   	}
+	   }
+	   @media only screen and (min-width: 768px) {
+	   	.travel-title {
+	   		padding: 20px 0px 0px 0px;
+	   		font-size: 20pt;
+	   	}
+	   	.travel-space {
+	   		height: 10px;
+	   	}
+	   }
+	   @media only screen and (min-width: 992px) {
+	   	.travel-title {
+	   		padding: 20px 0px 0px 0px;
+	   		font-size: 22pt;
+	   	}
+	   	.travel-space {
+	   		height: 100px;
+	   	}
+	   }
+   	.travel-title {
+   		text-align: center;
+   		width: 400px;
+   		margin-right: auto; margin-left: auto;
+   		/*font-family: 'Nanum Gothic', sans-serif;*/
+   	}
+   	.travel-text {
+   		text-align: center;
+   		width: 400px;
+   		font-size: 10pt;
+   		padding: 0px 0px 20px 0px;
+   		margin-right: auto; margin-left: auto;
+   		font-family: 'Nanum Gothic', sans-serif;
+   	}
+   	.caption {
+   		font-family: 'Nanum Gothic', sans-serif;
+   	}
+   	section {
+   		text-align: center;
+   	}
+		</style>
+	</head>
+	<body>
+		<div class="outer">
+			<a href="index.html" class="black-link"><div class="boot-header">
+				<h1>emily x meschke</h1>
+				<p>COMPUTATIONAL & COGNITIVE NEUROSCIENCE</p>
+			</div></a>
+			<div class="menu">
+				<ul id="menulist">
+					<li class="menuitem"><a href="index.html">HOME</a></li>
+					<li class="menuitem"><a href="research.html">RESEARCH</a></li>
+					<li class="menuitem"><a href="cv.html">CV</a></li>
+					<li class="menuitem active"><a href="travels.html">HIGHLIGHTS</a></li>
+					<li class="menuitem"><a href="cats.html">CATS</a></li>
+					<li class="menuitem"><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+
+			<div class="main">
+				<div class="travel-title">Canada</div>
+				<div class="travel-text">March 2018</div>
+				<section class="page">
+					<img src="images/travels/canada2.png" width="100%">
+				</section>
+
+				<div class="travel-title">San Diego</div>
+				<div class="travel-text">February 2018</div>
+				<section class="page">
+					<img src="images/travels/sandiego1.png" width="100%">
+				</section>
+
+				<div class="travel-title">San Francisco</div>
+				<div class="travel-text">January 2018</div>
+				<section class="page">
+					<img src="images/travels/sanfran1.png" width="100%">
+				</section>
+
+
+				<div class="travel-title">UK</div>
+				<div class="travel-text">December 2017</div>
+				<section class="page">
+					<img src="images/travels/edinburgh1.jpg" width="100%">
+				</section>
+
+				<div class="travel-title">Amsterdam</div>
+				<div class="travel-text">March 2017</div>
+				<section class="page">
+					<img src="images/travels/amsterdam.png" width="100%">
+				</section>
+
+				<div class="travel-title">Cambodia</div>
+				<div class="travel-text">March 2016</div>
+				<section class="page">
+					<img src="images/travels/cambodia.png" width="100%">
+				</section>
+				
+				<div class="travel-title">Anywhere</div>
+				<div class="travel-text">Anytime</div>
+				<section class="page">
+					<img src="images/travels/pals.png" width="100%">
+				</section>
+				
+			</div>
+
+	    	<div class="travel-space"></div>
+			<div class="footer">Website created by Emily Meschke.</div>
+		</div>
+		<script>
+			$(".main").tiltedpage_scroll({
+			   sectionContainer: "> section",  // In case you don't want to use <section> tag, you can define your won CSS selector here
+			   angle: 50, // You can define the angle of the tilted section here. Change this to false if you want to disable the tilted effect. The default value is 50 degrees.
+			   opacity: true, // You can toggle the opacity effect with this option. The default value is true
+			   scale: true, // You can toggle the scaling effect here as well. The default value is true.
+			   outAnimation: true // In case you do not want the out animation, you can toggle this to false. The defaul value is true.
+			});
+		</script>
+	</body>
+</html>
