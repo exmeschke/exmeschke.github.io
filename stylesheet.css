@@ -49,18 +49,25 @@
 		left: 5%;
 		top: 270px;
 		padding: 0px 10px;
-		width: 42%;
+		width: 45%;
 		height: 190px;
+
+		overflow: hidden;
 	}
 	#front-page-title h1 {
-		font-size: 14pt;
-		line-height: 22pt;
+		font-size: 12pt;
+		line-height: 20pt;
+		padding-top: 6pt;
 	}
 	#front-page-title p {
-		font-size: 9.5px;
+		font-size: 9px;
+		line-height: 9pt;
+		padding-bottom: 10px;
+		margin: 0px;
 	}
 	#mailto {
-		font-size: 10pt;
+		/*margin-top: 20pt;*/
+		font-size: 7pt;
 	}
 	#photos {
 		padding: 20px 0px;
@@ -156,17 +163,19 @@
 	/* MAIN PAGE */
 	#front-page-title {
 		left: 12%;
-		top: 290px;
+		top: 280px;
 		padding: 0px 10px;
 		width: 35%;
-		height: 230px;
+		height: 280px;
 	}
 	#front-page-title h1 {
 		font-size: 16pt;
 		line-height: 32pt;
+		padding-top: 10pt;
 	}
 	#front-page-title p {
 		font-size: 12px;
+		/*padding-top: 4pt;*/
 	}
 	#mailto {
 		font-size: 10pt;
@@ -271,17 +280,19 @@
 		top: 290px;
 		padding: 10px 25px;
 		width: 35%;
-		height: 310px;
+		height: 370px;
 
 		overflow: hidden;
 	}
 	#front-page-title h1 {
+		padding-top: 20pt;
 		font-size: 22pt;
 		line-height: 28pt;
 	}
 	#front-page-title p {
 		font-size: 11pt;
-		padding: 10px 12px;
+		/*padding: 15px 12px;*/
+		padding-top: 15px;
 	}
 	#mailto {
 		font-size: 12pt;
@@ -395,6 +406,12 @@ body {
    text-align: right;
    cursor: pointer;
    display: inline;
+}
+.dropdown {
+	list-style-type: none;
+   	text-align: right;
+   	cursor: pointer;
+   	display: inline;
 }
 .active {
 	color: #ffcccc;
@@ -565,7 +582,7 @@ a:hover {
 
 /* CATS */
 .cat-gallery {
-	width: 80%;
+	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -575,7 +592,7 @@ a:hover {
 	background-color: #ff6666;
 	margin-left: auto;
 	margin-right: auto;
-	width: 90%;
+	width: 70%;
 }
 #cat-text {
 	text-align: center;

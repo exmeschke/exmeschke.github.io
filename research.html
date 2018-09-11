@@ -5,10 +5,16 @@
 		<meta name="description" content="Research projects by Emily Meschke.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display" rel="stylesheet">
+		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<!-- stylesheet -->
+	   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 	   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 	   <style>
+	   	/* MENU*/
 	   	.boot-header{
 	   		padding: 52px 0px 13px 0px;
 	   	}
@@ -27,6 +33,7 @@
 	   		padding-top: 3px;
 	   		line-height: 19px;
 	   	}
+	   	/* NOT MENU */
 	   	.head {
 	   		background-image: url("images/research-head.png");
 	   		font-family: 'Nanum Gothic', sans-serif;
@@ -181,15 +188,28 @@
 			<div class="boot-menu">
 				<ul id="menulist">
 					<li class="menuitem"><a href="index.html">HOME</a></li>
-					<li class="menuitem"><a href="research.html">RESEARCH</a></li>
+					<!-- <li class="menuitem"><a href="research.html">RESEARCH</a></li> -->
+					<!-- <li class="menuitem"><a href="travels.html">HIGHLIGHTS</a></li> -->
+					<div class="dropdown" style="color: white;">
+						<li class="menuitem" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						 <a href="">RESEARCH</a>
+						</li>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							 <a class="dropdown-item" href="research.html">image understanding</a>
+							 <a class="dropdown-item" href="research-hri.html">interaction</a>
+						</div>
+					</div>
+
 					<li class="menuitem"><a href="cv.html">CV</a></li>
-					<li class="menuitem"><a href="travels.html">HIGHLIGHTS</a></li>
 					<li class="menuitem"><a href="cats.html">CATS</a></li>
 					<li class="menuitem"><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</div>
 			<div class="head">
-				<h2>overview</h2>
+				<!-- <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=zocIbSMAAAAJ" target="_blank">
+					<button class="contact-button" id="scholar-button">Research</button>
+				</a> -->
+				<h2>image understanding</h2>
 				<table>
 				  	<thead>
 				    	<tr>
@@ -198,6 +218,10 @@
 				   	</tr>
 				  	</thead>
 				  	<tbody>
+				  		<tr>
+					      <td>Summer 2018</td>
+					      <td class="right-col"><a href="#hmf" class="red-link">Expanding receptive fields in face processing areas.</a></td>
+				    	</tr>
 				    	<tr>
 					      <td>Spring 2018</td>
 					      <td class="right-col"><a href="#hmf" class="red-link">How many faces can you recognize?</a></td>
@@ -224,7 +248,7 @@
 				    	</tr>
 				    	<tr>
 					      <td>Spring 2016</td>
-					      <td class="right-col"><a href="#vertices" class="red-link">Vertices aid perceptual grouping (and ungrouping) in object recognition.</a></td>
+					      <td class="right-col"><a href="#vertices" class="red-link">Vertices aid perceptual grouping (and ungrouping).</a></td>
 				    	</tr>
 				    	<tr style="line-height: 2px"></tr>
 				  	</tbody>
@@ -243,14 +267,14 @@
 						<img src="images/research-hmf.png" class="image">
 					</div>
 					<div class="col-md description">
-						<p style="margin-bottom: 10px;">The short answer: about 1700.</p>
+						<p style="margin-bottom: 10px;">The short answer: about 1904.</p>
 						<p>The long(er) answer: I considered three classes of relations where we have an opportunity to learn a face:</p>
 							<ol style="font-family: 'Nanum Gothic', sans-serif; margin-top: 0px">
 								<li>celebrities with which we have no personal contact</li>
 								<li>personally familiar individuals with whom we have sufficient contact such as friends, coworkers, and family </li>
 								<li>people we know from a specific context, such as a passenger on our usual bus route.</li>
 							</ol>
-						<p>The sum of the three provides, for the first time, a lower-bounds estimate of the number of identifiable faces. </p>
+						<p>The sum of the three provides a lower-bounds estimate of the number of identifiable faces. </p>
 					</div>
 				</div>
 			</section>

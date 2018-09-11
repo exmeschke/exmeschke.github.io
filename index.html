@@ -5,20 +5,56 @@
     	<meta name="description" content="The home page for Emily Meschke.">
     	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display" rel="stylesheet">
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<!-- stylesheet -->
 	   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+	   <style>
+	   	.boot-header{
+	   		padding: 52px 0px 13px 0px;
+	   	}
+	   	.boot-header h1 {
+	   		line-height: 29pt;
+	   	}
+	   	@media screen and (max-width: 768px) {
+	   		.boot-header{
+		   		padding: 62px 0px 13px 0px;
+		   	}
+		   	.boot-header h1 {
+		   		line-height: 29pt;
+		   	}
+	   	}
+	   	#menulist {
+	   		padding-top: 3px;
+	   		line-height: 19px;
+	   	}
+	   </style>
 	</head>
 	<body>
-		<div class="outer">
+		<div class="boot-outer">
 			<a href="index.html" class="black-link"><div class="boot-header">
 				<h1>emily x meschke</h1>
 				<p>COMPUTATIONAL & COGNITIVE NEUROSCIENCE</p>
 			</div></a>
-			<div class="menu">
+			<div class="boot-menu">
 				<ul id="menulist">
 					<li class="menuitem"><a href="index.html">HOME</a></li>
-					<li class="menuitem"><a href="research.html">RESEARCH</a></li>
+					<!-- <li class="menuitem"><a href="research.html">RESEARCH</a></li> -->
+					<!-- <li class="menuitem"><a href="travels.html">HIGHLIGHTS</a></li> -->
+					<div class="dropdown" style="color: white;">
+						<li class="menuitem" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						 <a href="">RESEARCH</a>
+						</li>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							 <a class="dropdown-item" href="research.html">image understanding</a>
+							 <a class="dropdown-item" href="research-hri.html">interaction</a>
+						</div>
+					</div>
+
 					<li class="menuitem"><a href="cv.html">CV</a></li>
-					<li class="menuitem"><a href="travels.html">HIGHLIGHTS</a></li>
 					<li class="menuitem"><a href="cats.html">CATS</a></li>
 					<li class="menuitem"><a href="contact.html">CONTACT</a></li>
 				</ul>
@@ -27,31 +63,33 @@
 				<img id="em-home" src="images/home-em.jpg" />
 				<div id="front-page-title">
 					<h1>welcome!</h1>
-					<p>I'm an undergraduate student studying Computational Neuroscience and Computer Science, to understand how we get mind from brain. <br><br>My research explores vision, face recognition, neuroimaging, and human-robot interaction. </p>
+					<p>I'm an undergrad studying Computational Neuroscience and Computer Science to 1) understand how we get mind from brain and 2) explore how to implement mind outside of brain. <br><br>My research interests include perception, face recognition, neuroimaging, and human-robot interaction. </p>
 					<p><a id="mailto" href="mailto:emeschke@usc.edu">emeschke@usc.edu</a></p>
 				</div>
 				<div id="titles">
 					<ul id="photos">
 						<li class="home-item">
-							research  
+							image understanding lab
 							<a href="research.html"><img src="images/home-researchh.jpg"></a>
-							<p>I'm a member of the <a href="http://geon.usc.edu/index.html" target="_blank">Image Understanding Lab</a> and the <a href="http://robotics.usc.edu/interaction/" target="_blank">Interaction Lab</a> at USC.</p>
+							<p>I've been involved with the <a href="http://geon.usc.edu/index.html" target="_blank">Image Understanding Lab</a> since my first semester at USC!</p>
 						</li>
 						<li class="home-item">
-							highlights
-							<a href="travels.html"><img src="images/home-travelss.jpg"></a>
-							<p>... fortuante enough to have travelled around the world during school breaks!</p>
+							interaction lab
+							<a href="research.html"><img src="images/home-interaction.png"></a>
+							<p>I joined the <a href="http://robotics.usc.edu/interaction/" target="_blank">Interaction Lab</a> Spring of 2018 and developed an interest in applying my background in psychology to HRI. 
+							<!-- <a href="travels.html"><img src="images/home-travelss.jpg"></a> -->
+							<!-- <p>... fortuante enough to have travelled around the world during school breaks!</p> -->
 						</li>
 						<li class="home-item">
 							cats
 							<a href="cats.html"><img src="images/home-catt.jpg"></a>
-							<p>They started out as fosters. Now I can't imagine life without my four-legged friends. </p>
+							<p>My first (and hopefully last) foster fails! Please direct all comments regarding their cuteness to <a href="mailto:emilyxmeschke@gmail.com">emilyxmeschke@gmail.com</a></p>
 						</li>
 					</ul>
 				</div>
 				<div id="contact">
 					get in touch
-					<p>Feel free to reach out! I'm applying to grad school this coming fall, to pursue a PhD in Cognitive or Computational Neuroscience.</p>
+					<p>Feel free to reach out! This fall, I am applying to pursue a PhD in some form of applied Cognitive Neuroscience, in hopes of developing cognitive models for real-world applications.</p>
 					<div id="contact-links">
 						<a href="cv.html"><button class="contact-button" >my cv</button></a>
 						<a href="contact.html"><button class="contact-button">contact</button></a>

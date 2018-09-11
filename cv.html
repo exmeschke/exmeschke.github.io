@@ -5,9 +5,12 @@
 		<meta name="description" content="An online CV for Emily Meschke.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Playfair+Display" rel="stylesheet">
+		<!-- bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+		<!-- stylesheet -->
 	   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 	   <style>
 	   	.boot-header{
@@ -92,12 +95,22 @@
 			</div></a>
 			<div class="boot-menu">
 				<ul id="menulist">
-					<li class=menuitem><a href="index.html">HOME</a></li>
-					<li class=menuitem><a href="research.html">RESEARCH</a></li>
-					<li class=menuitem><a href="cv.html">CV</a></li>
-					<li class=menuitem><a href="travels.html">HIGHLIGHTS</a></li>
-					<li class=menuitem><a href="cats.html">CATS</a></li>
-					<li class=menuitem><a href="contact.html">CONTACT</a></li>
+					<li class="menuitem"><a href="index.html">HOME</a></li>
+					<!-- <li class="menuitem"><a href="research.html">RESEARCH</a></li> -->
+					<!-- <li class="menuitem"><a href="travels.html">HIGHLIGHTS</a></li> -->
+					<div class="dropdown" style="color: white;">
+						<li class="menuitem" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						 <a href="">RESEARCH</a>
+						</li>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							 <a class="dropdown-item" href="research.html">image understanding</a>
+							 <a class="dropdown-item" href="research-hri.html">interaction</a>
+						</div>
+					</div>
+
+					<li class="menuitem"><a href="cv.html">CV</a></li>
+					<li class="menuitem"><a href="cats.html">CATS</a></li>
+					<li class="menuitem"><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</div>
 			<div class="row">
@@ -105,7 +118,7 @@
 						<div id="cv-head-box">
 							<div id="cv-head-text">
 								<h4>curriculum vitae</h4>
-								<p>Last Updated: April 2018</p>
+								<p>Last Updated: September 2018</p>
 								<a href="cv_emilymeschke.pdf"><button class="contact-button" id="download">PDF Download</button></a>
 							</div>
 						</div>
@@ -142,7 +155,7 @@
 					</div>
 					<div class="col-8">
 						<div class="section cv-research-des">
-							<span style="font-size: 10pt;">Conduct psychophysical testing and neuroimaging research on human face recognition and congenital prosopagnosia.</span>
+							<span style="font-size: 10pt;">I conduct psychophysical testing and neuroimaging research to test theories of human face recognition and evaluate potential causes of developmental prosopagnosia.</span>
 						</div>
 					</div>
 				</div>
@@ -157,7 +170,7 @@
 					</div>
 					<div class="col-8">
 						<div class="section cv-research-des">
-							<span style="font-size: 10pt;">Investigate how to optimize human-robot communication and collaboration.</span>
+							<span style="font-size: 10pt;">My research focuses on modeling aspects of human cognition, specifically perception and attention, facilitate collaboration between humans and robots.</span>
 						</div>
 					</div>
 				</div>
@@ -168,9 +181,10 @@
 				<div class="row">
 					<div class="col-12">
 						<ol class="section">
-							<li class="list"><a href="#" class="red-link"><span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). Discriminating Doppelgangers. <i>Psychological Science</i>, submitted.</a></li>
-							<li class="list"><a href="https://www.sciencedirect.com/science/article/pii/S0042698918300336" target="_blank" class="red-link">Hacker, C.M., <span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). A Face in a (Temporal) Crowd. <i>Vision Research</i>, in press.</a></li>
-							<li class="list"><a href="https://www.sciencedirect.com/science/article/pii/S0028393218300423" target="_blank" class="red-link">Biederman, I., Shilowich, B.E., Herald, S.B., Margalit, E., Maarek, R., <span class="serif-font">Meschke, E.X.,</span> & Hacker, C.H. The Cognitive Neuroscience of Person Identification. <i>Neuropsychologia</i>, in press.</a></li>
+							<li class="list"><span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). How many faces can you recognize?, in progress.</li>
+							<li class="list"><span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). Discriminating Doppelgangers. <i>Psychological Science</i>, submitted.</li>
+							<li class="list"><a href="https://www.sciencedirect.com/science/article/pii/S0042698918300336" target="_blank" class="red-link">Hacker, C.M., <span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). A Face in a (Temporal) Crowd. <i>Vision Research</i>, in press.</li></a>
+							<li class="list"><a href="https://www.sciencedirect.com/science/article/pii/S0028393218300423" target="_blank" class="red-link">Biederman, I., Shilowich, B.E., Herald, S.B., Margalit, E., Maarek, R., <span class="serif-font">Meschke, E.X.,</span> & Hacker, C.H. (2018). The Cognitive Neuroscience of Person Identification. <i>Neuropsychologia</i>, in press.</a></li>
 						</ul>
 					</div>
 				</div>
@@ -181,10 +195,10 @@
 				<div class="row">
 					<div class="col-12">
 						<ol class="section">
-							<li class="list">Biederman, I., Margalit, E., Herald, S.B., Maarek, R., & <span class="serif-font">Meschke, E.X.,</span> (2018). What is the Nature of the Perceptual Deficit in Congenital Prosopagnosia? Talk accepted to the Annual Meeting of Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
-							<li class="list"><span class="serif-font">Meschke, E.X.,</span> Hacker, C.M., & Biederman, I. (2018). How Many Faces Can a Person Recognize? Poster accepted to be presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
-							<li class="list">Hacker, C.M., <span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). Recognition of Stretched Faces. Poster accepted to be presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
-							<li class="list">Zhu, T., Nelken, M., Hacker, C.M., <span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). Matching Depth-Rotated Faces at Varying Degrees of Physical Similarity. Poster accepted to be presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
+							<li class="list">Biederman, I., Margalit, E., Herald, S.B., Maarek, R., & <span class="serif-font">Meschke, E.X.,</span> (2018). What is the Nature of the Perceptual Deficit in Congenital Prosopagnosia? Talk given at the Annual Meeting of Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
+							<li class="list"><span class="serif-font">Meschke, E.X.,</span> Hacker, C.M., & Biederman, I. (2018). How Many Faces Can a Person Recognize? Poster presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
+							<li class="list">Hacker, C.M., <span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). Recognition of Stretched Faces. Poster presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
+							<li class="list">Zhu, T., Nelken, M., Hacker, C.M., <span class="serif-font">Meschke, E.X.,</span> & Biederman, I. (2018). Matching Depth-Rotated Faces at Varying Degrees of Physical Similarity. Poster presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
 							<li class="list"><span class="serif-font">Meschke, E.X.,</span> Hacker, C.M., Juarez, J.J., Maarek, R.S., & Biederman, I. (2017). Detecting Unspecified Familiar Faces. Poster presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
 							<li class="list">Biederman, I., <span class="serif-font">Meschke, E.X.,</span> Maarek, R., & Margalit, E. (2017). What is the Nature of the Perceptual Deficit in Congenital Prosopagnosia? Paper presented at the Annual Meeting of the Society of Experimental Psychologists, Vanderbilt Univ., Nashville, TN. March.</li>
 							<li class="list">Biederman, I., Margalit, E., Maarek, R.S., <span class="serif-font">Meschke, E.X.,</span> Shilowich, B.S., Hacker, C. M., Juarez, J.J., Seamans, T. J., & Herald, S.B. (2017). What is the Nature of the Perceptual Deficit in Congenital Prosopagnosia? Poster presented at the Annual Meeting of the Vision Sciences Society, St. Petersburg Beach, Fl. May.</li>
@@ -201,9 +215,9 @@
 						<div class="section">
 							<div class="skill-title">Programming<br></div> 
 								<li class="skill-listitem">Java</li>
+								<li class="skill-listitem">Python</li>
 								<li class="skill-listitem">MATLAB</li>
 								<li class="skill-listitem">C/C++</li>
-								<li class="skill-listitem">Python</li>
 								<li class="skill-listitem">Psychtoolbox</li>
 								<li class="skill-listitem">HTML/CSS/JS</li>
 								<li class="skill-listitem">MySQL</li>
@@ -217,8 +231,9 @@
 								<li class="skill-listitem">fMRI</li>
 								<li class="skill-listitem">Psychophysical research</li>
 								<li class="skill-listitem">Behavioral research</li>
+								<li class="skill-listitem">Game design for AI</li>
 								<li class="skill-listitem">Experimental design</li>
-								<li class="skill-listitem">Online surveys</li>
+								<li class="skill-listitem">Survey creation</li>
 							</div>
 					</div>
 					<div class="col-4">
@@ -232,7 +247,7 @@
 				</div>
 				<!-- AWARDS and GRANTS -->
 				<div class="row award">
-					<div class="col-12 section-title">Awards and Grants</div>
+					<div class="col-12 section-title">Awards</div>
 				</div>
 				<div class="row">
 					<div class="col-4 cv-award">
