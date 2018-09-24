@@ -233,12 +233,16 @@
 				<h3>Learning interruptibility</h3>
 				
 				<div class="col-sm-10 description" style="margin-left: auto; margin-right: auto; padding-top: 10px">
-					<p>This branch of my research involves modeling the human and robot state as an MDP, to teach a robot to map a nonverbal cue to appropriate states. I worked on this project closely with <a href="http://lizcha.com/" target="_blank" class="red-link">Elizabeth Cha</a>, who developed the idea for the project and guided the design of the MDP. </p>
-					<p>I developed a simple, RPG world using to test human interruptibility as a function of robot request urgency and current human task and designed the world dynamics to fit the model we created. The code for the game is available <a href="https://github.com/exmeschke/crafty-gridworld" target="_blank" class="red-link">here</a>.
+					<p>As people become more reliant on robots to complete basic tasks, establishing methods to enhance collaboration and communication between humans and robots becomes more essential. This branch of my research focuses on developing cognitively informed, computational models of hidden human states (such as availability) that autonomous agents should learn to consider when interacting with people.</p> 
+					<p>For this project, I worked closely with <a href="http://lizcha.com/" target="_blank" class="red-link">Elizabeth Cha</a>, to model the state of the human and robot as an MDP. Based on the urgency of the robot's request and the availability of the human, the robot learns to determine which non-verbal signal is appropriate for the situation.</p>
+					<p>I developed a simple, RPG world in Javascript and designed the game tasks to thoroughly test the model. The code for the game is available <a href="https://github.com/exmeschke/crafty-gridworld" target="_blank" class="red-link">here</a>.
 					</p>
 				</div>
 				<div class="col-sm-6" style="margin-left: auto; margin-right: auto;">
 					<img src="images/research-interrupt.png" width="80%">
+				</div>
+				<div class="col-sm-10 description" style="margin-left: auto; margin-right: auto; padding-top: 10px">
+					<p>In the next iteration of the project, I won't assume that the state of the human is known to the robot, modeling the learning problem as a POMDP instead of an MDP.</p>
 				</div>
 			</div>
 			
