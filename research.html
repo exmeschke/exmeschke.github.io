@@ -206,9 +206,6 @@
 				</ul>
 			</div>
 			<div class="head">
-				<!-- <a href="https://scholar.google.com/citations?hl=en&authuser=1&user=zocIbSMAAAAJ" target="_blank">
-					<button class="contact-button" id="scholar-button">Research</button>
-				</a> -->
 				<h2>image understanding</h2>
 				<table>
 				  	<thead>
@@ -220,7 +217,7 @@
 				  	<tbody>
 				  		<tr>
 					      <td>Summer 2018</td>
-					      <td class="right-col"><a href="#hmf" class="red-link">Expanding receptive fields in face processing areas.</a></td>
+					      <td class="right-col"><a href="#expand-rf" class="red-link">Expanding receptive fields in face-selective areas.</a></td>
 				    	</tr>
 				    	<tr>
 					      <td>Spring 2018</td>
@@ -260,6 +257,19 @@
 			<div id="to-top" style="font-size: 11pt">
 				<a href="#top" class="red-link">Back to Top</a>
 			</div>
+			<section id="expand-rf">
+				<h3>Expanding receptive fields in face-selective areas.</h3>
+				<div class="row">
+					<div class="image" style="margin-top:15px">
+						<img src="images/research-rf.png" class="image">
+					</div>
+					<div class="col-md description">
+						<p style="margin-bottom: 10px;">Faces are processed holistically, meaning that both the parts and the relationships among the parts provide information about the identity of the face. The theory championed by the Image Understanding Lab is that large receptive fields in face processing areas, such as the FFA and OFA, magnify small metric differences across the face, allowing for neurotypicals to account for these small variations. As Withoff et al. (2014) demonstrated that those with prosopagnosia have, on average, smaller receptive fields in face processing areas, this theory also explains why those with prosopagnosia have difficulties recognizing familiar faces: they lack the large receptive fields that would magnify small differences between similar faces.</p>
+
+						<p>This experiment was designed to behaviorally test whether those with prosopagnosia have smaller receptive fields. By controlling both the subjects' fixation and the coarse location of the feature changes between faces (upper, middle, lower), I will 1) test to see whether those with prosopagnosia perform worse than controls when the feature changes are further from fixation and 2) develop a training regimen to teach those with prosopagnosia to zoom-out, expanding the receptive fields in their face processing areas.</p>
+					</div>
+				</div>
+			</section>
 			<section id="hmf">
 				<h3>How many faces can you recognize?</h3>
 				<div class="row">
@@ -285,8 +295,8 @@
 				</div>
 				<div class="col-sm-10 description" style="margin-left: auto; margin-right: auto; padding-top: 10px">
 					<p>Given how similar faces are to each other, people seem to have a remarkable capacity for face recognition.<br>
-					Much of my work in the Image Understanding Lab has focused on figuring out ways to quantify people's ability to both perceive (above) and remember (below) faces.</p>
-					<p>I've created and managed database of the results from multiple tests--including the USC Face Perception Test, the Cambridge Face Memory Test, and the PI20--for hundreds of subjects. Check out the results on the Image Understanding Lab website <a href="http://geon.usc.edu/results.html" target="_blank" class="red-link">here</a>.
+					Much of my work in the Image Understanding Lab has focused on figuring out ways to quantify people's ability to both perceive (above) and remember (below) faces. While there are many tests that "diagnose" prosopagnosia, in that those with prosopagnosia perform reliably worse than controls, many of these tests do not distinguish between potential causes. By tracking subject performance across mutliple tests, we can better isolate the reason for their deficit, whether it be perceptual, memory, or a combination of the two. </p>
+					<p>I've created and managed database of the results from multiple tests--including the USC Face Perception Test, the Cambridge Face Memory Test, and the PI20--for hundreds of subjects. I'm currently working with a software developer to design and create a database that automatically secures subject information, allowing the lab to collect and analyze subject data more quickly and efficiently. Check out some of the population results on the Image Understanding Lab website <a href="http://geon.usc.edu/results.html" target="_blank" class="red-link">here</a>.
 					</p>
 				</div>
 				<div class="col-sm-6" style="margin-left: auto; margin-right: auto;">
@@ -298,6 +308,7 @@
 				<div class="row">
 					<div class="col-12 col-lg-8 description" style="padding-left: 40px; padding-top: 0px;">
 						<p>I developed a celebrity identification task that mimics real life face recognition. The only instruction is to identify which image is that of the celebrity, left or right. The non-celebrity faces were chosen to be as similar to the celebrity as possible in hairstyle, face shape, facial features, expression, and coloration--a doppelganger--to prevent those who struggle with recognizing faces from relying on non-face features for identification.</p>
+						<p>While this task is trivially easy for most neurotypical subjects, those with prosopagnosia struggle with the task, which demonstrates that small, ineffable differences between highly familiar faces somehow, with great precision, encode identity.</p>
 						<p>Try the test <a href="https://usc.qualtrics.com/jfe/form/SV_80UBRxapqq6IruB" target="_blank" class="red-link">here</a>! (It's fun, I promise) </p>
 					</div>
 					<div class="col-10 col-lg-4" style="margin-left: auto;margin-right: auto; margin-top: 0px;">
@@ -315,8 +326,8 @@
 						<button onclick="replay()" class="contact-button" id="replay-button">Replay</button> 
 					</div>
 					<div class="col-12 col-xl-8 description">
-						<p>Even in situations with extreme uncertainty, face recognition is possible. In this experiment, a single celebrity--any celebrity--was shown in a sequence of 32 rapidly-presented headshots. The subjects didn't know if there was a celebrity in any particular sequence and, if one was present, who that celebrity would be or what the particular image would be.</p>
-						<p>Somewhat remarkably, subjects were able to detect the presence of a celebrity on 75% of the occurrences and, when a celebrity was detected, the subjects always identified the particular celebrity.</p>
+						<p>Even in situations with extreme uncertainty, face recognition is effortless, and in this experiment, we tested the temporal capacity for recognition. On each trial, a single celebrity--any celebrity--was shown in a sequence of 32 rapidly-presented headshots. The subjects didn't know if there was a celebrity in any particular sequence and, if one was present, who that celebrity would be or what the particular image would be.</p>
+						<p>Somewhat remarkably, subjects were able to detect the presence of a celebrity on 75% of the occurrences and, when a celebrity was detected, the subjects almost always identified the particular celebrity.</p>
 						<p>Check out the <a href="http://geon.usc.edu/~biederman/presentations/RSVPDoppelganger_VSS_17.pdf" target="_blank" class="red-link">poster here</a>.</p>
 					</div>
 				</div>
@@ -329,7 +340,7 @@
 						<img src="images/research-config-head.png" width="100%">
 					</div>
 					<div class="col-12 col-xl-4 description" style="padding-top: 20px;">
-						<p>Faces are processed holistically, meaning the relative distance between parts provides key information about the identity of the face. It turns out that having the parts in a normal order resulted in a significant reduction in reaction time <i>only</i> when the parts are enclosed within a head.</p>
+						<p>Many experiments have investigated the notion of a configural effect in face recognition, where the face parts provide more information in the context of a face than they do alone. In this experiment, we varied two factors: the ordering of the face parts and the presence of a head. It turns out that having the parts in a normal order resulted in a significant reduction in reaction time <i>only</i> when the parts are enclosed within a head.</p>
 						<p>Check out the <a href="http://http://geon.usc.edu/~biederman/presentations/PerceptualDeficit_VSS_17.pdf" target="_blank" class="red-link">poster here</a>.</p>
 					</div>
 					<div class="col-6 col-xl-4" style="margin-left: auto; margin-right: auto;">
@@ -344,7 +355,7 @@
 						<img src="images/research-fpt.png" id="dopp-img">
 					</div>
 					<div class="col-12 col-xl-8 description">
-						<p>Prosopagnosia is defined as the inability to recognize familiar faces. Using a match to sample paradigm, the Image Understanding Lab proved this deficit has a perceptual component, as congenital prosopagnosics (CPs) are worse at discriminating both faces and complex, metrically varying shapes (blobs) but not simple geometric objects.</p>
+						<p>Prosopagnosia is defined as the inability to recognize familiar faces. Using a match-to-sample paradigm, the Image Understanding Lab demonstrated this deficit has a perceptual component, as congenital prosopagnosics (CPs) are worse at discriminating both faces and complex, metrically varying shapes (blobs) but not simple geometric objects. Furthermore, there was little effect of a 4 second delay, indicating that the result is not due to a deficit with working memory.</p>
 						<p>Try it <a href="http://testable.org/t/3734ca8b8" target="_blank" class="red-link">here</a>!</p>
 					</div>
 				</div>
